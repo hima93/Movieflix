@@ -10,8 +10,8 @@ import java.util.UUID;
 @Table
 @NamedQueries({ @NamedQuery(name = "Movie.findAll", query = "SELECT m FROM Movie m ORDER BY m.title ASC"),
 	
-     	@NamedQuery(name = "Movie.findTopMovies", query = "SELECT m FROM Movie m  WHERE m.type=:ptype order by m.imdbRating DESC"),
-    	@NamedQuery(name = "Movie.findTopTvSeries", query = "SELECT m FROM Movie m  WHERE m.type=:ptype order by m.imdbRating DESC"),
+     	@NamedQuery(name = "Movie.findTopMovies", query = "SELECT TOP(10) FROM Movie m  WHERE m.type=:ptype order by m.imdbRating DESC"),
+    	@NamedQuery(name = "Movie.findTopTvSeries", query = "SELECT TOP(10) FROM Movie m  WHERE m.type=:ptype order by m.imdbRating DESC"),
     	@NamedQuery(name = "Movie.findByType", query = "SELECT m FROM Movie m WHERE m.year=:ptype"),
 		@NamedQuery(name = "Movie.findByYear", query = "SELECT m FROM Movie m WHERE m.year=:pYear"),
 		@NamedQuery(name = "Movie.findById", query = "SELECT m FROM Movie m WHERE m.id=:pId"),

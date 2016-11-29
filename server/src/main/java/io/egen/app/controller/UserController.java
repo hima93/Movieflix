@@ -23,19 +23,19 @@ public class UserController {
 	
 	
 	//User Registration
-		@RequestMapping(method = RequestMethod.POST,value="register", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+		@RequestMapping(method = RequestMethod.POST,path="/register", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
 		public String create(@RequestBody User usr){
 			return service.create(usr);
 		}
 
 		//Admin Registration
-		@RequestMapping(method = RequestMethod.POST,value="register/Admin", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+		@RequestMapping(method = RequestMethod.POST,path="/register/Admin", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
 		public String create_Admin(@RequestBody User usr){
 			return service.create_Admin(usr);
 		}
 		
 		//Login user & Admin returns login successful or not
-			@RequestMapping(method = RequestMethod.POST,value="login", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+			@RequestMapping(method = RequestMethod.POST,path="/login", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
 			public String login(@RequestBody User usr){
 				return service.login(usr);
 			}
