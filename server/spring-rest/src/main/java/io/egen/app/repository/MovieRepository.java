@@ -15,10 +15,12 @@ public interface MovieRepository {
 
 	public List<Movie> findByYear(int year);
 	public List<Movie> findBytype(String type);
+	public Movie findBytitle(String title);
 	
 	public List<Movie> sortByimdbRating();
 	public List<Movie> sortByimdbVotes();
 	public List<Movie> sortByYear();
 	public List<Movie>findTopRatedMovies();
 	public List<Movie>findTopRatedSeries();
-}
+	
+	}

@@ -1,9 +1,9 @@
 package io.egen.app.entity;
 
+
 import java.util.UUID;
 
 import javax.persistence.Entity;
-
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
@@ -11,14 +11,16 @@ import javax.persistence.NamedQuery;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
+import io.egen.app.entity.Movie;;
+
 
 
 @Entity
 @Table
 @NamedQueries({ 
-        @NamedQuery(name="Rating.findAverage", query = "SELECT avg(u.rating) FROM Rating u where u.Movie.id=:pMovieId")
+		@NamedQuery(name = "Comments.findComments", query = "SELECT u FROM Comments u where u.Movie.id = :pMovieId")
 })
-public class Rating {
+public class Comments {
 
 	@Id
 	private String id;
@@ -26,14 +28,15 @@ public class Rating {
 	@ManyToOne
 	@PrimaryKeyJoinColumn(name="userId", referencedColumnName="id")
 	private User user;
+	
+	
 	@ManyToOne
 	@PrimaryKeyJoinColumn(name="MovieId", referencedColumnName="id")
 	private Movie movie;
 	
-	private Double rating;
+	private String comments;
 	
-	
-	public Rating() {
+	public Comments() {
  		id = UUID.randomUUID().toString();
  	}
 	public String getId() {
@@ -60,17 +63,17 @@ public class Rating {
 		this.movie = movie;
 	}
 	
-	public Double getRating() {
-		return rating;
-	}
-	
-	public void setRating(Double rating) {
-		this.rating = rating;
-	}
-	
 	@Override
 	public String toString() {
-		return "Rating [id=" + id + ", user=" + user + ", Movie=" + movie + ", rating=" + rating + "]";
+		return "UserComments [id=" + id + ", user=" + user + ", Movie=" + movie + ", comments=" + comments + "]";
+	}
+	
+	public String getComments() {
+		return comments;
+	}
+	
+	public void setComments(String comments) {
+		this.comments = comments;
 	}
 	
 }

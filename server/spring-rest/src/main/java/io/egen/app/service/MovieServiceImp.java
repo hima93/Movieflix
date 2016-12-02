@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import io.egen.app.entity.Movie;
+import io.egen.app.exception.EntityAlreadyExistException;
 import io.egen.app.exception.EntityNotFoundException;
 import io.egen.app.repository.MovieRepository;
 
@@ -23,8 +24,12 @@ public class MovieServiceImp implements MovieService{
 
 	@Override
 	public Movie create(Movie movie) {
+		Movie existing = repository.findBytitle(movie.getTitle());
+		if (existing != null) {
+			throw new EntityAlreadyExistException( "Movie already exists with this title");
+		}
 		
-		return repository.create(movie);
+		 return repository.create(movie);
 	}
 
 	@Override

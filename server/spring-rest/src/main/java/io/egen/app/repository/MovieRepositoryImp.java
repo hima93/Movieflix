@@ -95,4 +95,18 @@ public class MovieRepositoryImp implements MovieRepository{
 
 	}
 
+	@Override
+	public Movie findBytitle(String title) {
+		TypedQuery<Movie> query = em.createNamedQuery("Movie.findByTitle", Movie.class);
+		query.setParameter("pTitle", title);
+		List<Movie> list = query.getResultList();
+		if(list!=null && list.size() == 1){
+			return list.get(0);
+		}
+		return null;
+
+	}
+
 }
+
+
