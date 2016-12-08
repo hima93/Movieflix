@@ -1,0 +1,16 @@
+body{
+
+    /*background:black;*/
+    color:Red;
+}
+
+table{
+
+    width:60%;
+}
+th,td,tr
+{
+
+    width:50px;
+    height:80px;
+}
