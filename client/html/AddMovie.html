@@ -2,157 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register here!</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Add new Movie</title>
+
     <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
     <link href = "../css/AddMovie.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-</header>
-<div id="wrapper">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3 class="panel-title">Add Movie</h3>
-        </div>
-        <div class="panel-body">
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <label for="title" class="col-sm-2 control-label">Title</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="title" placeholder="Title">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="year" class="col-sm-2 control-label">Year</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="year" placeholder="Year">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="rated" class="col-sm-2 control-label">Rated</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="rated" placeholder="Rated">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="released" class="col-sm-2 control-label">Released Date</label>
-                    <div class="col-sm-8">
-                        <input type="date" class="form-control" id="released" placeholder="Released Date">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="runTime" class="col-sm-2 control-label">Run Time</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="runTime" placeholder="runTime">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="genre" class="col-sm-2 control-label">Genre</label>
-                    <div class="col-sm-8">
-                        <div   class="input-group input-group-unstyled">
-                            <input type="text" class="form-control" id="genre" placeholder="Genre">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="director" class="col-sm-2 control-label">Director</label>
-                    <div class="col-sm-8">
-                        <div   class="input-group input-group-unstyled">
-                            <input type="text" class="form-control" id="director" placeholder="Director">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="writer" class="col-sm-2 control-label">Writer</label>
-                    <div class="col-sm-8">
-                        <div   class="input-group input-group-unstyled">
-                            <input type="text" class="form-control" id="writer" placeholder="Writer">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="actors" class="col-sm-2 control-label">Actors</label>
-                    <div class="col-sm-8">
-                        <div   class="input-group input-group-unstyled">
-                            <input type="text" class="form-control" id="actors" placeholder="Actors">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="plot" class="col-sm-2 control-label">Plot</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="plot" placeholder="Plot">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="language" class="col-sm-2 control-label">Language</label>
-                    <div class="col-sm-8">
-                        <div   class="input-group input-group-unstyled">
-                            <input type="text" class="form-control" id="language" placeholder="Language">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="country" class="col-sm-2 control-label">Country</label>
-                    <div class="col-sm-8">
-                        <div   class="input-group input-group-unstyled">
-                            <input type="text" class="form-control" id="country" placeholder="Country">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="awards" class="col-sm-2 control-label">Awards</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="awards" placeholder="Awards">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="poster" class="col-sm-2 control-label">Poster</label>
-                    <div class="col-sm-8">
-                        <input type="image" class="form-control" id="poster" placeholder="Movie Poster">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="imdbRating" class="col-sm-2 control-label">IMDB Rating</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="imdbRating" placeholder="IMDB Rating">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="imdbVotes" class="col-sm-2 control-label">IMDB Votes</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="imdbVotes" placeholder="IMDB Votes">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="imdbId" class="col-sm-2 control-label">IMDB Id</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="imdbId" placeholder="IMDB Id">
-                    </div>
-                </div>
-                <div class="form-group" >
-                    <label for="type" class="col-sm-2 control-label">Type</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="type" placeholder="Type">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <a href="home.html" class="btn btn-primary" role="button">Register</a>
-                        <button type="reset" class="btn btn-default">Reset</button>
-                    </div>
-                </div>
-            </form>
+<form  method="post">
 
+
+    <div id="Home page">
+        <div id="logo">
+            <h1><a href="/" id="logoLink">MovieFlix</a></h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="AdminHome.html">Home</a></li>
+
+                <li><a href="AdminAccount.html">My Account</a></li>
+                <li><a href="Signout.html">Signout</a></li>
+
+            </ul>
         </div>
 
     </div>
-</div>
+
+
+
+    <table class="Add_movie_table">
+        <tr>
+            <td>Title<span>*</span></td>
+            <td><input type="text" name="title" id="title" placeholder="Title"></td>
+        </tr>
+        <tr>
+            <td>Year</td>
+            <td><input type="text" name="year" id="year" placeholder="Year"></td>
+        </tr>
+        <tr>
+            <td>Rated</td>
+            <td><input type="text" name="Rated" id="Rated" placeholder="Rated"></td>
+        </tr>
+        <tr>
+            <td>Released Date</td>
+            <td><input type="Date" name="year" id="year"> </td>
+        </tr>
+        <tr>
+            <td>Run Time</td>
+            <td><input type="text" name="Run Time" id="Run Time" placeholder="Run Time"></td>
+        </tr>
+        <tr>
+            <td>Genre</td>
+            <td><input type="text" name="Genre" id="Genre" placeholder="Genre"></td>
+        </tr>
+        <tr>
+            <td>Director</td>
+            <td><input type="text" name="Director" id="Director" placeholder="Director"></td>
+        </tr>
+        <tr>
+            <td>Writer</td>
+            <td><input type="text" name="Writer" id="Writer" placeholder="Writer"></td>
+        </tr>
+        <tr>
+            <td>Actors</td>
+            <td><input type="text" name="Actors" id="Actors" placeholder="Actors"></td>
+        </tr>
+        <tr>
+            <td>Plot</td>
+            <td><input type="text" name="Plot" id="Plot" placeholder="Plot"></td>
+        </tr>
+        <tr>
+            <td>Language</td>
+            <td><input type="text" name="Language" id="Language" placeholder="Language"></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td><input type="text" name="Country" id="Country" placeholder="Country"></td>
+        </tr>
+        <tr>
+            <td>Awards</td>
+            <td><input type="text" name="Awards" id="Awards" placeholder="Awards"></td>
+        </tr>
+        <tr>
+            <td>Poster</td>
+            <td><input type="text" name="Poster" id="Poster" placeholder="Poster"></td>
+        </tr>
+        <tr>
+            <td>IMDB Rating</td>
+            <td><input type="text" name="IMDB Rating" id="IMDB Rating" placeholder="IMDB Rating"></td>
+        </tr>
+        <tr>
+            <td>IMDB Votes</td>
+            <td><input type="text" name="IMDB Votes" id="IMDB Votes" placeholder="IMDB Votes"></td>
+        </tr>
+        <tr>
+            <td>IMDB Id</td>
+            <td><input type="text" name="IMDB Id" id="IMDB Id" placeholder="IMDB Id"></td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td><input type="text" name="Type" id="Type" placeholder="Type"></td>
+        </tr>
+
+        <tr>
+            <td align="center" colspan="2"><input type="submit" value="Add Movie"></td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>

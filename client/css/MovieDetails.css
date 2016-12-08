@@ -1,3 +1,5 @@
+/* Styles go here */
+
 body{
     margin      : 0;
     padding     : 1.5em;
@@ -8,23 +10,59 @@ body{
     background-image: url("../images/generic_background.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
+    width:30%;
 
 }
 
-.movieDetails{
+.MovieName{
 
-    width:30%;
+    color:Red;
+    font-family: "Times New Roman", Times, serif;
+    font-style:oblique;
+    font-size:25px;
+}
+.image{
+
+
+    padding:10px;
 }
 p{
     margin  : 0 0 1.5em;
     padding : 0;
 }
+.plot{
+
+    color:orange;
+    font-family: "Times New Roman", Times, serif;
+    font-style:italic;
+    font-size:15px;
+}
+.Details{
+
+    color: rgb(153,0,153);
+    font-family: "Times New Roman", Times, serif;
+    /*  font-style:italic; */
+    font-size:17px;
+
+
+}
+.Comments{
+
+    margin:4px;
+    color:rgb(126, 226, 243);
+}
+
 iframe {
     position: fixed;
     visibility: visible;
     left: 650px;
     top: 60px;
+    width:60%;
     z-index: 200;
+    float:right;
+
+}
+.Rating{
 
 }
 a{
@@ -62,6 +100,10 @@ a{
     background-size : contain;
     opacity         : 0;
     transition      : opacity 0.2s linear;
+}
+.duration{
+
+
 }
 
 .starRating:not(old) > label:hover:before,

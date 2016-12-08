@@ -1,0 +1,78 @@
+/* Styles go here */
+
+
+
+body
+{
+    color:orangered;
+    background:black;
+}
+
+a,tr td input[type="submit"]:hover{
+    color: Red;
+    text-decoration: none;
+}
+#page{ margin: 20px; }
+
+table{
+
+    position:fixed;
+
+    left:400px;
+    top:500px;
+    width:100%;
+
+}
+
+tr td input[type="submit"] {
+    background-color: white;
+    color:red;
+    padding: 20px 40px;
+    border: 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:10px;
+
+
+}
+#logo{
+
+    width: 60%;
+    font-size: 25px;
+    margin-top: 35px;
+    font-family: georgia;
+    display: inline-block;
+    margin-left:5px;
+
+}
+#nav{
+
+    margin-top: 15px;
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+
+#nav ul li{
+    display: inline-block;
+    height: 50px;
+}
+#nav ul li a{
+    padding: 20px;
+    background: red;
+    color: white;
+}
+#nav ul li a:hover,tr td input[type="submit"]:hover{
+    background-color: #ffb424;
+    box-shadow: 0px 1px 1px #666;
+}
+#nav ul li a:active,tr td input[type="submit"]:hover{ background-color: #ff8f00; }
+
+#content{
+    margin: 30px 0;
+    background: white;
+    padding: 20px;
+    clear: both;
+}
