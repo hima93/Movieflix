@@ -1,0 +1,15 @@
+body{
+
+    background: black;
+
+    color:red;
+    font-size:30px;
+
+
+    padding:50px;
+}
+.message{
+position:fixed;
+    left:500px;
+    top:400px;
+}

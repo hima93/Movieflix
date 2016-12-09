@@ -1,0 +1,114 @@
+/* Styles go here */
+
+body{
+    margin      : 0;
+    padding     : 1.5em;
+    font-family : sans-serif;
+    line-height : 1.5;
+    color:white;
+    background:black;
+    background-image: url("../images/generic_background.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:30%;
+
+}
+
+.MovieName{
+
+    color:Red;
+    font-family: "Times New Roman", Times, serif;
+    font-style:oblique;
+    font-size:25px;
+}
+.image{
+
+
+    padding:10px;
+}
+p{
+    margin  : 0 0 1.5em;
+    padding : 0;
+}
+.plot{
+
+    color:orange;
+    font-family: "Times New Roman", Times, serif;
+    font-style:italic;
+    font-size:15px;
+}
+.Details{
+
+    color: rgb(153,0,153);
+    font-family: "Times New Roman", Times, serif;
+    /*  font-style:italic; */
+    font-size:17px;
+
+
+}
+.Comments{
+
+    margin:4px;
+    color:rgb(126, 226, 243);
+}
+
+iframe {
+    position: fixed;
+    visibility: visible;
+    left: 450px;
+    top: 60px;
+    width:60%;
+    z-index: 200;
+    float:right;
+    /*MARGIN:100PX;*/
+
+}
+.Rating{
+
+}
+a{
+    color           : #9c3;
+    text-decoration : none;
+}
+
+.starRating:not(old){
+    display        : inline-block;
+    width          : 7.5em;
+    height         : 1.5em;
+    overflow       : hidden;
+    vertical-align : bottom;
+}
+
+.starRating:not(old) > input{
+    margin-right : -100%;
+    opacity      : 0;
+}
+
+.starRating:not(old) > label{
+    display         : block;
+    float           : right;
+    position        : relative;
+    background      : url('../images/star-off.svg');
+    background-size : contain;
+}
+
+.starRating:not(old) > label:before{
+    content         : '';
+    display         : block;
+    width           : 1.5em;
+    height          : 1.5em;
+    background      : url(http://vignette3.wikia.nocookie.net/fantendo/images/4/49/Super_Star_NSMB2.png/revision/latest?cb=20120731024244);
+    background-size : contain;
+    opacity         : 0;
+    transition      : opacity 0.2s linear;
+}
+.duration{
+
+
+}
+
+.starRating:not(old) > label:hover:before,
+.starRating:not(old) > label:hover ~ label:before,
+.starRating:not(:hover) > :checked ~ label:before{
+    opacity : 1;
+}

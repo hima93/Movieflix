@@ -1,0 +1,78 @@
+/* Styles go here */
+
+body
+{
+    color:orangered;
+    font-family: arial; font-size: 80%; line-height: 1.2em;
+    background: black;
+}
+
+a{
+    color: Red;
+    text-decoration: none;
+}
+
+
+#page{ margin: 20px; }
+
+table{
+
+    margin:40px;
+    color:white;
+    font-size:20px;
+    width:90%;
+    text-align:center;
+    border-spacing: 30px;
+    padding: 15px;
+    border: 1px solid white;
+
+}
+.account
+{
+    color:yellow;
+    font-size:25px;
+    font-style:italic;
+    padding:20px;
+    margin:20px;
+}
+
+#logo{
+
+    width: 60%;
+    font-size: 25px;
+    margin-top: 35px;
+    font-family: georgia;
+    display: inline-block;
+    margin-left:5px;
+
+}
+#nav{
+
+    margin-top: 15px;
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+
+#nav ul li{
+    display: inline-block;
+    height: 50px;
+}
+#nav ul li a{
+    padding: 20px;
+    background: red;
+    color: white;
+}
+#nav ul li a:hover{
+    background-color: #ffb424;
+    box-shadow: 0px 1px 1px #666;
+}
+#nav ul li a:active{ background-color: #ff8f00; }
+
+#content{
+    margin: 30px 0;
+    background: white;
+    padding: 20px;
+    clear: both;
+}
