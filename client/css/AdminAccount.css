@@ -1,40 +1,41 @@
 /* Styles go here */
 
-
-
 body
 {
     color:orangered;
-    background:black;
+    font-family: arial; font-size: 80%; line-height: 1.2em;
+    background: black;
 }
 
-a,tr td input[type="submit"]:hover{
+a{
     color: Red;
     text-decoration: none;
 }
+
+
 #page{ margin: 20px; }
 
 table{
 
-    position:fixed;
-    left:100px;
-    top:200px;
-    width:100%;
+    margin:40px;
+    color:white;
+    font-size:20px;
+    width:90%;
+    text-align:center;
+    border-spacing: 30px;
+    padding: 15px;
+    border: 1px solid white;
 
 }
-
-tr td input[type="submit"] {
-    background-color: white;
-    color:red;
-    padding: 20px 40px;
-    border: 10px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin:10px;
-
-
+.account
+{
+    color:yellow;
+    font-size:25px;
+    font-style:italic;
+    padding:20px;
+    margin:20px;
 }
+
 #logo{
 
     width: 60%;
@@ -63,11 +64,11 @@ tr td input[type="submit"] {
     background: red;
     color: white;
 }
-#nav ul li a:hover,tr td input[type="submit"]:hover{
+#nav ul li a:hover{
     background-color: #ffb424;
     box-shadow: 0px 1px 1px #666;
 }
-#nav ul li a:active,tr td input[type="submit"]:hover{ background-color: #ff8f00; }
+#nav ul li a:active{ background-color: #ff8f00; }
 
 #content{
     margin: 30px 0;

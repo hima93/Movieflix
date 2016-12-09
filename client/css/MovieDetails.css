@@ -55,11 +55,12 @@ p{
 iframe {
     position: fixed;
     visibility: visible;
-    left: 650px;
+    left: 450px;
     top: 60px;
     width:60%;
     z-index: 200;
     float:right;
+    /*MARGIN:100PX;*/
 
 }
 .Rating{

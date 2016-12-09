@@ -6,6 +6,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
     <link rel="stylesheet" href="../css/Movie.css" type="text/css" />
+    <script src="../css/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 <body>
@@ -27,7 +30,13 @@
 </div>
 <div class="Movies">
 
-    <table class="table">
+    <div class="search">
+        <i class="fa fa-search"></i><span>
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for movie" title="Type in a name">
+</span>
+    </div>
+    <table class="sortable">
         <thead>
         <tr  align="center">
             <th>Title</th>
@@ -36,14 +45,14 @@
             <th>Released</th>
             <th>Runtime</th>
             <th>IMDB Rating</th>
-            <th>Action</th>
+            <th>IMDB Votes</th>
         </tr>
         </thead>
         <tbody>
         <tr align="center">
             <td>
                 <figure>
-                    <a href="movieDetails.html">
+                    <a href="MovieDetails.html">
                         <img src="http://ia.media-imdb.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_SX300.jpg" width="140" height="140"/>
                         <figcaption>Avengers: Age of Ultron</figcaption>
                     </a>
@@ -54,15 +63,32 @@
             <td>01 May 2015</td>
             <td>144 min</td>
             <td>7.6</td>
-            <td>
-                <i class="glyphicon glyphicon-pencil" aria-hidden="true"></i>
-                <i class="glyphicon glyphicon-remove" aria-hidden="true"></i>
-            </td>
+            <td>370909</td>
+
         </tr>
         <tr align="center">
             <td>
                 <figure>
-                    <a href="movieDetails.html">
+                    <a href="MovieDetails.html">
+                        <img src="http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg" width="140" height="140"/>
+                        <figcaption>The Shawshank Redemption</figcaption>
+                    </a>
+                </figure>
+
+            </td>
+            <td>1994</td>
+            <td>R</td>
+            <td>14 Oct 1994</td>
+            <td>142 min</td>
+            <td>9.3</td>
+            <td>1590699</td>
+
+        </tr>
+
+        <tr align="center">
+            <td>
+                <figure>
+                    <a href="MovieDetails.html">
                         <img src="http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg" width="140" height="140"/>
                         <figcaption>The Avengers</figcaption>
                     </a>
@@ -74,11 +100,11 @@
             <td>04 May 2012</td>
             <td>143 min</td>
             <td>8.1</td>
-            <td>
-                <i class="glyphicon glyphicon-pencil" aria-hidden="true"></i>
-                <i class="glyphicon glyphicon-remove" aria-hidden="true"></i>
-            </td>
+            <td>920458</td>
+
         </tr>
+
+
 
 
         </tbody>
